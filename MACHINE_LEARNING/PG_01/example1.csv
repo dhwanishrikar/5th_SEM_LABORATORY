@@ -1,0 +1,6 @@
+age,income,student,credit,approved
+young,high,no,fair,no
+young,high,no,excellent,no
+middle,high,no,fair,yes
+senior,medium,yes,fair,yes
+senior,low,yes,excellent,yes
