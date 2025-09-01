@@ -2,10 +2,10 @@
 # Bank Database Schema
 
 ## QUES-01: Consider the following schema for bank database:
-BRANCH(Branch_id , Bank_name,Branch_name , Assets) 
-ACCOUNT(Acc_no,Branch_id,Account_type,Account_balance,Customer_id) 
-CUSTOMER (Customer_id,Customer_name,Customer_age,Customer_address,Customer_phone) 
-LOAN(Loan_number,Branch_id,Amount,Customer_id)
+BRANCH(Branch_id , Bank_name,Branch_name , Assets) \n
+ACCOUNT(Acc_no,Branch_id,Account_type,Account_balance,Customer_id) \n
+CUSTOMER (Customer_id,Customer_name,Customer_age,Customer_address,Customer_phone) \n
+LOAN(Loan_number,Branch_id,Amount,Customer_id) \n
 
 ---
 
