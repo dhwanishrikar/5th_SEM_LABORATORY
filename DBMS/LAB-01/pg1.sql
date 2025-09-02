@@ -1,9 +1,8 @@
------------
------------
---BRANCH 
------------
------------
-
+/*
+--------
+BRANCH 
+--------
+*/
 CREATE TABLE BARNCH(
   BRANCH_ID VARCHAR(10),
   BANK_NAME VARCHAR(15),
@@ -11,3 +10,4 @@ CREATE TABLE BARNCH(
   ASSETS INT NOT NULL,
   PRIMARY KEY(BRANCH_ID)
 );
+/* table created */
