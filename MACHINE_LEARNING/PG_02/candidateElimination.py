@@ -10,31 +10,24 @@ target = np.array(data.iloc[:,-1])
 print(target)
 
 def learn(concepts, target):
-
     specific_h = concepts[0].copy()
     print("\nInitialization of specific_h")
     print(specific_h)
-    
     print("\nInitialization of general_h")
     general_h = [["?" for i in range(len(specific_h))] for i in range(len(specific_h))]
     print(general_h)
-
     for i, h in enumerate(concepts):
-
         if target[i] == "Yes":
             for x in range(len(specific_h)):
-
                 if h[x] != specific_h[x]:
                     specific_h[x] = '?'
                     general_h[x][x] = '?'
-
         if target[i] == "No":
             for x in range(len(specific_h)):
                 if h[x] != specific_h[x]:
                     general_h[x][x] = specific_h[x]
                 else:
                     general_h[x][x] = '?'
-
         print("\nSteps of Candidate Elimination Algorithm",i+1)
         print(specific_h)
         print(general_h)
