@@ -7,9 +7,9 @@ data=pd.read_csv('heart.csv')
 subset_data=data[['age','sex','cp','thalach','exang','oldpeak','target']]
 print(subset_data.head())
 
-model=BayesianModel([('age','thalach'),
-                     ('sex','thalach'),
-                     ('cp','thalach'),
+model=BayesianModel([('age','target'),
+                     ('sex','target'),
+                     ('cp','target'),
                      ('thalach','target'),
                      ('exang','target'),
                      ('oldpeak','target')
