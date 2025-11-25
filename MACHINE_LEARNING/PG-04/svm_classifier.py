@@ -14,7 +14,7 @@ svm_classifier = SVC(kernel='linear', C=1.0, random_state=42)
 svm_classifier.fit(X_train, y_train)
 y_pred = svm_classifier.predict(X_test)
 accuracy = accuracy_score(y_test, y_pred)
-
+print('accuracy',accuracy)
 xmin,xmax = X[:,0].min() - 1,X[:,0].max() + 1
 ymin,ymax = X[:,1].min() - 1,X[:,1].max() + 1
 xx,yy = np.meshgrid(np.arange(xmin, xmax, 0.01), np.arange(ymin, ymax, 0.01))
@@ -27,4 +27,5 @@ plt.scatter(X[:,0], X[:,1], c=y, edgecolors='k', marker='o')
 plt.xlabel('Sepal length')
 plt.ylabel('Sepal width')
 plt.title(f'SVM Classifier Decision Boundary')
+
 plt.show()
